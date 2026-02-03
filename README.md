@@ -1,4 +1,4 @@
-https://naila-bon.github.io/nailabon.github.io/
+https://naila-bon.github.io/
 
 
 # 📚 Structure du Portfolio Book
