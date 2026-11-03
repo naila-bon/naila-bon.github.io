@@ -2,7 +2,6 @@ import {
   Box,
   VStack,
   Text,
-  Image,
   HStack,
   Badge,
   Link,
@@ -125,34 +124,6 @@ const PageContent = ({ data, isLeft, isMobile }: PageContentProps) => {
           justify="start"
           gap={isMobile ? 2 : 4}
         >
-          {/* Washi Tape décorative pour la photo */}
-          <Box position="absolute" top={isMobile ? "50px" : "60px"} zIndex={2}>
-            <Box
-              bg="#ffb6c1"
-              px={isMobile ? 3 : 4}
-              py={1}
-              transform="rotate(-3deg)"
-              boxShadow="sm"
-            />
-          </Box>
-          
-          {/* Photo avec cadre décoratif */}
-          <Box
-            border={isMobile ? "3px solid white" : "6px solid white"}
-            boxShadow="lg"
-            transform="rotate(-2deg)"
-            mt={isMobile ? 1 : 4}
-            position="relative"
-          >
-            <Image 
-              src={data.photo} 
-              alt="Naïla Bon" 
-              w={isMobile ? "80px" : "140px"} 
-              h={isMobile ? "100px" : "175px"} 
-              objectFit="cover" 
-            />
-          </Box>
-          
           {/* Titre et sous-titre */}
           <VStack gap={0.5} textAlign="center">
             <Text 

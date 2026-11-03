@@ -4,7 +4,6 @@ export interface PageData {
   subtitle?: string;
   author?: string;
   content?: string;
-  photo?: string;
   year?: string;
   award?: string;
   link?: string;
@@ -86,15 +85,11 @@ export const skillsList = [
   { name: 'Collaborer', key: 'collaborer' },
 ];
 
-// Import de l'image pour que Vite gère correctement le chemin
-import photoImg from '../assets/photo.jpg?url';
-
 export const pages: PageData[] = [
   {
     type: 'accueil',
     title: 'Naïla Bon',
     subtitle: 'Développeuse Full-Stack Créative',
-    photo: photoImg,
     content: `Étudiante en 3ème année de BUT Informatique à l'Université Toulouse - Jean Jaurès, je suis actuellement en alternance chez Collins Aerospace à Toulouse.`,
     socials: [
       { platform: 'GitHub', url: 'https://github.com/naila-bon', icon: 'Github' },
